@@ -1,0 +1,39 @@
+<!--This is the xml file for the bottom sheet layout which pops up on
+clicking the plus button-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<!--    Edit text to add the task
+removing the horizontal line that is visible below-->
+    <EditText
+        android:id="@+id/newTaskText"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        app:backgroundTint="@null"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:hint="New Task">
+></EditText>
+
+<!--    Save button -->
+    <Button
+        android:id="@+id/newTaskButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/newTaskText"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:background="@android:color/transparent"
+        android:text="Save"
+        android:textAllCaps="false"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="16sp"
+        
+
+        />
+
+</RelativeLayout>
+
+
